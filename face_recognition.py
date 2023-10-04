@@ -20,10 +20,10 @@ last_capture_time = 0
 while True:
     ret, video_data = video_cap.read()
 
-    #Converting the Captured Face into greyscale.
+    #Converting the Captured Face into 'greyscale'.
     grey = cv2.cvtColor(video_data, cv2.COLOR_BGR2GRAY)
 
-    #Captuing the faces.
+    #Captuing the 'faces'.
     faces = face_cap.detectMultiScale(
         grey,
         scaleFactor = 1.1,
@@ -32,7 +32,7 @@ while True:
         flags = cv2.CASCADE_SCALE_IMAGE
         )
 
-    #Creating the Rectangle around the face.
+    #Creating the 'Rectangle around the face'.
     for (x, y, w, h) in faces:
         
         current_time = time()
@@ -47,7 +47,7 @@ while True:
             #Update the last_capture_time.
             last_capture_time = current_time
 
-            #Save the cropped face with a unique name.
+            #Save the cropped face with a 'unique' name.
             face_counter += 1
             face_filename = f'./Facial Recognition raw/saved faces/face_{face_counter}.jpg'
             cv2.imwrite(face_filename, cropped_face)
