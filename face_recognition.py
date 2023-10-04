@@ -4,7 +4,7 @@ import cv2
 from time import time
 
 #Face Capturing.
-#model_path = r"C:/Users/{Sachin}/AppData/Local/Programs/Python/Python311/Lib/site-packages/cv2/data/haarcascade_frontalface_default.xml"
+# model_path = r"C:/Users/{Sachin}/AppData/Local/Programs/Python/Python311/Lib/site-packages/cv2/data/haarcascade_frontalface_default.xml"
 face_cap = cv2.CascadeClassifier("./Facial Recognition/models/haarcascade_frontalface_default.xml")
 
 #Creating the Video Capturing Object.
@@ -49,7 +49,7 @@ while True:
 
             #Save the cropped face with a unique name.
             face_counter += 1
-            face_filename = f'./Facial Recognition/saved faces/face_{face_counter}.jpg'
+            face_filename = f'./Facial Recognition raw/facial_recognition/saved faces/face_{face_counter}.jpg'
             cv2.imwrite(face_filename, cropped_face)
             print(f'Saved: {face_filename}')
 
