@@ -49,7 +49,7 @@ while True:
 
             #Save the cropped face with a unique name.
             face_counter += 1
-            face_filename = f'./Facial Recognition raw/facial_recognition/saved faces/face_{face_counter}.jpg'
+            face_filename = f'./Facial Recognition raw/saved faces/face_{face_counter}.jpg'
             cv2.imwrite(face_filename, cropped_face)
             print(f'Saved: {face_filename}')
 
