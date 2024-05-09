@@ -1,0 +1,21 @@
+@media screen and (max-width: 900px) {
+
+    /* Hide the non-mobile menu on smaller screens */
+    .hidden.sm\\:block {
+        display: none !important;
+    }
+
+    /* Styles for NavLink items in the mobile menu */
+    #mobile-menu a {
+        display: block;
+        width: 100%;
+        padding: 8px;
+        text-decoration: none;
+        color: #fff;
+        background-color: #374151;
+        border-radius: 4px;
+        margin-bottom: 5px;
+    }
+}
+
+/*media is not woring*/

@@ -1,0 +1,61 @@
+.grid h1 {
+    color: black !important;
+    margin-top: 5pc;
+    text-align: center;
+}
+
+.grid p {
+    color: black !important;
+    margin-top: 4pc;
+    text-align: center;
+    font-weight: bold;
+}
+
+.btn {
+    text-align: center;
+}
+
+@media (max-width: 920px) {
+    h1 {
+        margin-left: 5pc;
+    }
+
+    .ghar {
+        margin-left: 5pc !important;
+    }
+}
+
+
+.ghar {
+    margin-top: 5pc;
+    margin-left: 30pc;
+}
+
+.contains {
+    margin-top: 5pc;
+}
+
+.heading {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 7pc;
+    margin-right: 10pc;
+    font-weight: bold;
+}
+
+.photo {
+    height: 50vh;
+}
+
+.sajin {
+    margin-left: -6pc;
+    height: 50vh;
+}

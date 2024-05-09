@@ -1,1 +1,0 @@
-We are saving all the models which we will use for this project in this folder, as to make it easier to work when we deploy it to a server.
